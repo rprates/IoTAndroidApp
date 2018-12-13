@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormCliente">
+
+    <TextView
+        android:id="@+id/lblNomeEmpresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Nome da empresa:"/>
+
+    <EditText
+        android:id="@+id/edtNomeEmpresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/lblNomeEmpresa"
+        android:paddingLeft="10dp"
+        android:inputType="text"
+        android:width="300dp"
+        android:focusedByDefault="true"/>
+
+    <TextView
+        android:id="@+id/lblNomeContato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edtNomeEmpresa"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Nome do contato:"/>
+
+    <EditText
+        android:id="@+id/edtNomeContato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/lblNomeContato"
+        android:paddingLeft="10dp"
+        android:inputType="text"
+        android:width="300dp"/>
+
+    <TextView
+        android:id="@+id/lblTelefoneCelular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edtNomeContato"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:text="Celular:"/>
+
+    <EditText
+        android:id="@+id/edtTelefoneCelular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/lblTelefoneCelular"
+        android:paddingLeft="10dp"
+        android:inputType="phone"
+        android:width="150dp"/>
+
+    <TextView
+        android:id="@+id/lblEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edtTelefoneCelular"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="E-mail:"/>
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/lblEmail"
+        android:paddingLeft="10dp"
+        android:inputType="textEmailAddress"
+        android:width="300dp"/>
+
+    <Button
+        android:id="@+id/btnGravar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edtEmail"
+        android:layout_marginTop="40dp"
+        android:text="Gravar cliente"
+        android:onClick="gravarCliente"/>
+
+</android.support.constraint.ConstraintLayout>
